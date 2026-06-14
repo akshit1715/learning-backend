@@ -55,3 +55,35 @@ A full-stack video sharing platform inspired by YouTube, built with the MERN sta
 ---
 
 ## 📂 Project Structure
+
+```
+VideoTube/
+├── frontend/                  # React + Vite frontend
+│   ├── src/
+│   │   ├── api/               # Axios API calls (auth, video, comment, like, playlist)
+│   │   ├── assets/
+│   │   ├── components/        # Reusable UI components (Navbar, VideoCard, etc.)
+│   │   ├── pages/              # Route pages (Home, VideoPlayer, Playlists, etc.)
+│   │   ├── store/              # Redux store & slices
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── tailwind.config.js
+│
+├── src/                        # Express backend
+│   ├── controllers/            # Route logic (user, video, playlist, etc.)
+│   ├── db/                      # Database connection
+│   ├── middleware/              # Auth, multer middleware
+│   ├── models/                  # Mongoose schemas
+│   ├── routes/                  # API route definitions
+│   ├── utils/                   # ApiError, ApiResponse, asyncHandler, cloudinary
+│   ├── app.js
+│   ├── constants.js
+│   └── index.js
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+```
+
